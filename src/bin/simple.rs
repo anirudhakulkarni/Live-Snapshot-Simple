@@ -88,10 +88,10 @@ fn main() {
                     addr, data[0],
                 );
                 println!("{}", data[0] as char);
-                // let mem = unsafe { slice::from_raw_parts(load_addr, mem_size) }.to_vec();
-                // let mstate = state::State{state_cpu:state::StateCPU{regs:vcpu_regs,sregs:vcpu_sregs},state_mem:state::StateMem{mem}};
-                // state::save(mstate,&std::string::String::from("t1"));
-                // break;
+                let mem = unsafe { slice::from_raw_parts(load_addr, mem_size) }.to_vec();
+                let mstate = state::State{state_cpu:state::StateCPU{regs:vcpu_regs,sregs:vcpu_sregs},state_mem:state::StateMem{mem}};
+                state::save(mstate,&std::string::String::from("t1"));
+                break;
             }
             VcpuExit::Hlt => {
                 let vcpu_regs = vcpu_fd.get_regs().unwrap();
