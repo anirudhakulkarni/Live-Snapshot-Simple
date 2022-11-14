@@ -1,5 +1,5 @@
 # Live Snapshot : Simple
-This is a bareminimum implementation to show possibility of live snapshotting on KVM. This is not a production ready code. This is just a proof of concept. You may visit ![this link](https://github.com/anirudhakulkarni/Live-Snapshot) for generic linux live snapshotting.
+This is a bareminimum implementation to show possibility of live snapshotting on KVM. This is not a production ready code. This is just a proof of concept. You may visit [this link](https://github.com/anirudhakulkarni/Live-Snapshot) for generic linux live snapshotting.
 
 * Goal: run some instructions inside a VM sandbox, pause the VM, snapshot the VM, resume the VM, and run some more instructions inside the VM sandbox.
 
