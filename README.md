@@ -74,3 +74,8 @@ stuff.
 
 * Let's back the memory with a file. 
 * After halt we can see what was the state of the memory.
+
+
+## Running
+
+You can run the code using `cargo run --bin simple`. You can run the other binaries using `cargo run --bin <binary_name>`.
